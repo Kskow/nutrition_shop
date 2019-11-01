@@ -16,10 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
-from rest_framework.documentation import include_docs_urls
 
 urlpatterns = [
-    path("api/", include("app_name.urls")),
-    path("api/docs/", include_docs_urls(title="App name", public=False)),
+    path("api/", include("shop.urls")),
+    path("api/", include("rest_auth.urls")),
     path("admin/", admin.site.urls),
 ]

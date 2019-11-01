@@ -7,11 +7,9 @@ bash:
 migrate:
 	sudo docker-compose run web python manage.py makemigrations && sudo docker-compose run web python manage.py migrate
 test:
-	sudo docker-compose run web python manage.py test app_name.tests
+	sudo docker-compose run web python manage.py test shop
 shell:
 	sudo docker-compose run web python manage.py shell
 start:
 	sudo docker-compose build web && sudo docker-compose run web python manage.py makemigrations \
 	&& sudo docker-compose run web python manage.py migrate && sudo docker-compose up web
-requirements:
-	pip-compile --output-file requirements.txt requirements.in

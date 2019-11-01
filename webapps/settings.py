@@ -37,10 +37,12 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "rest_framework.authtoken",
+    "django_filters",
     "rest_auth",
-    "app_name",
     "rest_framework",
+    "rest_framework.authtoken",
+    "rest_framework_swagger",
+    "shop",
 ]
 
 MIDDLEWARE = [
@@ -82,8 +84,9 @@ DATABASES = {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "postgres",
         "USER": "postgres",
+        "PASSWORD": "postgres",
         "HOST": "db",
-        "PORT": 5432,
+        "PORT": "5432",
     }
 }
 

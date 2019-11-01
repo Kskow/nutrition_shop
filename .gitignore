@@ -4,3 +4,4 @@
 *.pyc
 */__pycache__/*
 */migrations/*
+*/todo_list.txt/

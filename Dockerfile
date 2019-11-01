@@ -16,7 +16,7 @@ COPY /requirements.txt /req/
 RUN pip3 install -U pip
 RUN cd /req && pip3 install -r requirements.txt
 
-COPY . /webapps
+COPY . /nutrition_shop
 
 EXPOSE 8000
-WORKDIR /webapps
+WORKDIR /nutrition_shop
