@@ -6,10 +6,9 @@
 #
 api==0.0.7
 appdirs==1.4.3            # via black
-appnope==0.1.0            # via ipython
 attrs==19.1.0             # via black
 backcall==0.1.0           # via ipython
-black==19.3b0
+black==19.10b0
 certifi==2018.11.29       # via requests
 chardet==3.0.4            # via requests
 click==7.0                # via black
@@ -37,6 +36,7 @@ mypy==0.720
 nose==1.3.7               # via api
 openapi-codec==1.3.2      # via django-rest-swagger
 parso==0.3.4              # via jedi
+pathspec==0.6.0           # via black
 pexpect==4.6.0            # via ipython
 pickleshare==0.7.5        # via ipython
 prompt-toolkit==2.0.9     # via ipython
@@ -46,16 +46,17 @@ pycodestyle==2.5.0        # via flake8
 pyflakes==2.1.0           # via flake8
 pygments==2.3.1           # via ipython
 pytz==2018.9              # via django
+regex==2019.11.1          # via black
 requests==2.21.0
 simplejson==3.16.0        # via django-rest-swagger
 six==1.12.0               # via django-rest-auth, prompt-toolkit, traitlets
 toml==0.10.0              # via black
 traitlets==4.3.2          # via ipython
-typed-ast==1.4.0          # via mypy
+typed-ast==1.4.0          # via black, mypy
 typing-extensions==3.7.4  # via mypy
 uritemplate==3.0.0        # via coreapi
-urllib3==1.24.1           # via requests
+urllib3==1.24.2           # via requests
 wcwidth==0.1.7            # via prompt-toolkit
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==41.1.0        # via ipdb, ipython
+# setuptools==41.6.0        # via ipdb, ipython
